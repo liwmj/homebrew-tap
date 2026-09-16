@@ -9,8 +9,7 @@ cask "ghlink" do
   # v0.5.13 还原（李工 00:08 令）：回传统 vendored 模式（不塞 PyInstaller 库进包），
   # dmg 为 universal 单包（build_dmg.sh 双架构 lipo 合并），url 恢复无 #{arch} 后缀，
   # 恢复 depends_on python@3.14（vendored 依赖 cp314 ABI，运行时需同版本）
-  url "https://github.com/liwmj/ghlink/releases/download/v#{version}/ghlink-#{version}.dmg",
-      verified: "github.com/liwmj/ghlink/"
+  url "https://github.com/liwmj/ghlink/releases/download/v#{version}/ghlink-#{version}.dmg"
   name "ghlink"
   desc "GitHub 链路自愈工具：主动监控连通性，异常时自动换 IP 写 hosts，自检回滚 + 多渠道告警"
   homepage "https://github.com/liwmj/ghlink"
